@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCoop - Creamos tu página</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f3e7ff, #d8b5ff);
+            height: 100%;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 20px 0;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a.active {
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .main-image, .main-content {
+            flex: 1;
+        }
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .main-content {
+            padding-left: 50px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #8a4baf;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta-button svg {
+            margin-left: 10px;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dots {
+            display: flex;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+        .dot.active {
+            background-color: #8a4baf;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/api/placeholder/40/40" alt="CodeCoop Logo">
+                    <span>CODECOOP</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-image">
+                <img src="/api/placeholder/400/300" alt="Web Development Illustration">
+            </div>
+            <div class="main-content">
+                <h1>CREAMOS TU PÁGINA</h1>
+                <p>Uniendo talento y fuerza para crear soluciones</p>
+                <a href="#" class="cta-button">
+                    Únete a nosotros
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main> 
+    <div class="dots"></div>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    <footer>
+       
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dots = document.querySelectorAll('.dot');
+            const pages = document.querySelectorAll('.page');
+            let currentPage = 1;
+
+            function showPage(pageNumber) {
+                pages.forEach((page, index) => {
+                    page.style.transform = `translateX(${100 * (index + 1 - pageNumber)}%)`;
+                });
+            }
+
+            function updateActiveDot(pageNumber) {
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[pageNumber - 1].classList.add('active');
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const pageNumber = parseInt(this.getAttribute('data-page'));
+                    if (pageNumber !== currentPage) {
+                        currentPage = pageNumber;
+                        showPage(currentPage);
+                        updateActiveDot(currentPage);
+                    }
+                });
+            });
+
+            // Inicializar la primera página
+            showPage(1);
+        });
+    </script>
+</body>
+</html>
