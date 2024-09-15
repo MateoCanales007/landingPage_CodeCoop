@@ -4,125 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCoop - Creamos tu página</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #f3e7ff, #d8b5ff);
-            height: 100%;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        header {
-            padding: 20px 0;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        .logo span {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        nav {
-            flex-grow: 1;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        nav ul li a.active {
-            font-weight: bold;
-        }
-        main {
-            display: flex;
-            align-items: center;
-            padding: 50px 0;
-        }
-        .main-image, .main-content {
-            flex: 1;
-        }
-        .main-image img {
-            max-width: 100%;
-            height: auto;
-        }
-        .main-content {
-            padding-left: 50px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            background-color: #8a4baf;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .cta-button svg {
-            margin-left: 10px;
-        }
-        footer {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .dots {
-            display: flex;
-        }
-        .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #ccc;
-            margin: 0 5px;
-        }
-        .dot.active {
-            background-color: #8a4baf;
-        }
-    </style>
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Hola</p>
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/api/placeholder/40/40" alt="CodeCoop Logo">
-                    <span>CODECOOP</span>
+                    <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726411181/CodeCoop_1__preview_rev_3_dgiuzm.png" alt="CodeCoop Logo">
                 </div>
                 <nav>
                     <ul>
@@ -138,22 +29,31 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="main-image">
-                <img src="/api/placeholder/400/300" alt="Web Development Illustration">
+        <main class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img id="img1" src="https://res.cloudinary.com/dj848z4er/image/upload/v1726413487/6_rnlhfq.png" alt="WWW" class="img-fluid">
+                        <img id="img2" src="https://res.cloudinary.com/dj848z4er/image/upload/v1726413486/7_enwxjw.png" alt="Code" class="img-fluid">
+                        <img id="img3" src="https://res.cloudinary.com/dj848z4er/image/upload/v1726413487/8_komem6.png" alt="SEO" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-content">
+                        <h1 class="mb-4">CREAMOS TU PÁGINA</h1>
+                        <p class="lead mb-4">Uniendo talento y fuerza para crear soluciones</p>
+                        <a href="#" class="cta-button">Únete a nosotros
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="main-content">
-                <h1>CREAMOS TU PÁGINA</h1>
-                <p>Uniendo talento y fuerza para crear soluciones</p>
-                <a href="#" class="cta-button">
-                    Únete a nosotros
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+            <div class="corner-image">
+                <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726412194/CodeCoop_2_jw6kkl.png" alt="Imagen en la esquina">
             </div>
-        </div>
-    </main> 
+        </main>
     <div class="dots"></div>
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -161,10 +61,48 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-
-    <footer>
-       
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726411181/CodeCoop_1__preview_rev_3_dgiuzm.png" alt="CodeCoop Logo">
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Our Technologies</a></li>
+                                <li><a href="#">Product Catalog</a></li>
+                                <li><a href="#">Solutions</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="#">Contact Form</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">T&C</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Social</h3>
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Discord</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CodeCoop. All Rights Reserved.</p>
+                    <p><a href="#" style="color: #ffffff; text-decoration: none;">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const dots = document.querySelectorAll('.dot');
@@ -197,5 +135,7 @@
             showPage(1);
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 </html>
