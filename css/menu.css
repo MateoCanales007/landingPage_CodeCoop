@@ -101,23 +101,6 @@ p {
 .cta-button svg {
     margin-left: 10px;
 }
-.cta-button:hover {
-    background-color: #562cff;
-}
-
-.dots {
-    display: flex;
-}
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-}
-.dot.active {
-    background-color: #8a4baf;
-}
 
 /* imagen en la esquina */
 .corner-image {
@@ -184,7 +167,7 @@ p {
 }
 
 .footer-column ul li a:hover {
-    color: #f0f0f0; /* Color al pasar el mouse */
+    color: #8548ff; /* Color al pasar el mouse */
 }
 .footer-bottom {
     margin-top: 20px;
