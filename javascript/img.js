@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach((img, index) => {
         setTimeout(() => {
             img.classList.add('fade-in');
-        }, index * 400); 
+        }, index * 900); 
     });
 });
 

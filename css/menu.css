@@ -94,16 +94,23 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 150px !important;
+    font-size: 140px !important;
     margin-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.main-content span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:oblique;
+    font-size: 120px;
+}
+
 .main-content p {
     font-family: 'Poppins', sans-serif;
     font-style:oblique;
     font-size: 40px !important;
     margin-bottom: 30px;
 }
+
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -112,8 +119,8 @@ h1 {
     padding: 20px 35px;
     border-radius: 30px;
     text-decoration: none;
-    font-weight: bold;
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
     width: fit-content;
 }
 .cta-button img {
@@ -121,11 +128,10 @@ h1 {
     margin-left: 20px;
 }
 
-
 /* imagen en la esquina */
 .corner-image {
     position: absolute;
-    top: 777px;
+    top: 755px;
     right: 0;
     width: 500px;
     z-index: 0;
