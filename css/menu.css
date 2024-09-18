@@ -5,11 +5,7 @@ body, html {
     background: linear-gradient(to right, #f3e7ff, #8418ff);
     height: 100%;
 }
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 header {
     padding: 20px 0;
 }
@@ -26,10 +22,7 @@ header {
     width: 120px; 
     margin-right: 10px;
 }
-.logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 nav {
     flex-grow: 1;
     text-align: center;
@@ -37,31 +30,57 @@ nav {
 nav ul li {
     display: inline-block;
     margin: 0 15px;
-    padding: 50px;
+    padding: 40px;
 }
 nav ul li a {
     text-decoration: none;
     color: #000000;
     font-size: 20px;
-}
-nav ul li a.active {
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    transition: color 0.3s; 
 }
+
+nav ul li a:hover {
+    color: #ffffff; /* Color al pasar el mouse */
+}
+
 
 /* IMAGENES 3D */
 .image-container {
     position: relative;
-    width: 300px;
+    width: 340px;
     height: 300px;
 }
 .image-container img {
     position: absolute;
-    width: 100%;
-    height: 100%;
 }
-#img1 { top: 10%; transform: translate(30%, -5%);}
-#img2 { top: 65%; transform: translate(10%, -1%);}
-#img3 { bottom: -130%; transform: translate(40%, -10%);}
+#img1, #img2, #img3 {
+    position: absolute;
+    opacity: 0; /* Inicialmente ocultas */
+    transition: opacity 2s ease;
+}
+
+#img1 {
+    transform: translate(30%, -10%);
+}
+
+#img2 {
+    transform: translate(-5%, 50%);
+}
+
+#img3 {
+    transform: translate(40%, 100%);
+}
+/* ANIMACION */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
 
 
 /* MAIN DIV */
@@ -75,41 +94,52 @@ nav ul li a.active {
 }
 
 h1 {
-    font-size: 100px !important;
+    font-size: 150px !important;
     margin-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
 }
-p {
+.main-content p {
     font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-size: 25px !important;
+    font-style:oblique;
+    font-size: 40px !important;
     margin-bottom: 30px;
 }
 .cta-button {
     display: inline-flex;
     align-items: center;
-    background:  linear-gradient(to right, #b26ff4, #8418ff);
+    background:  linear-gradient(to right, #864dff, #8418ff);
     color: white;
-    padding: 12px 24px;
-    border-radius: 25px;
+    padding: 20px 35px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 30px;
     width: fit-content;
 }
-.cta-button svg {
-    margin-left: 10px;
+.cta-button img {
+    width: 40px;
+    margin-left: 20px;
 }
+
 
 /* imagen en la esquina */
 .corner-image {
     position: absolute;
-    top: 580px;
-    bottom: 0;
+    top: 777px;
     right: 0;
     width: 500px;
     z-index: 0;
+    transform: translateY(100%); /* Inicialmente oculta debajo */
+    transition: transform 0.5s ease-out;
+}
+
+.corner-image img {
+    max-width: 500px; 
+    height: auto;
+}
+
+.corner-image.show {
+    transform: translateY(0); /* Mueve la imagen a su posición final */
 }
 
 
@@ -117,7 +147,8 @@ p {
 .footer {
     background-color: #000000;
     color: #ffffff;
-    padding: 40px 0;
+    padding: 30px 0;
+    padding-bottom: 0;
     margin-top: 21rem;
     border-top-left-radius: 35px; 
     border-top-right-radius: 35px;
@@ -177,4 +208,15 @@ p {
     padding-top: 10px;
     border-top: 1px solid #333;
     font-size: 12px;
+}
+
+.footer-bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-style:oblique;
+    font-size: 25px !important;
+    margin-bottom: 30px;
+}
+
+.footer-bottom span {
+    font-size: 20px;
 }
