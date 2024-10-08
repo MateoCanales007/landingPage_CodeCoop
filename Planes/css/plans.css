@@ -47,6 +47,104 @@ nav ul li a {
     transition: color 0.3s; 
 }
 
+/* Boton */
+
+.theme-toggle span{
+    font-size: 25px;
+}
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #8418ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* buton modo claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode .nav {
+    color: #000000;
+}
+
+.light-mode nav ul li a {
+    color: #000000;
+}
+
+.light-mode .main-content h1 {
+    color: #000000;
+}
+
+.light-mode .cta-button {
+    background: linear-gradient(to right, #4ad2f6, #8418ff);
+}
+
+.light-mode .footer {
+    background-color: #6904db;
+    color: #ffffff;
+}
+
+.light-mode .footer-column ul li a {
+    color: #ffffff;
+}
+
+.light-mode .footer-column ul li a:hover {
+    color: #8548ff;
+}
+
+.light-mode .footer {
+    color: #ffffff;
+}
+
+.light-mode .footer-bottom {
+    border-top: 1px solid #ffffff;
+}
+
+
 .planes-container {
     display: flex;
     justify-content: space-between;

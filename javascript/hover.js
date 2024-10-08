@@ -13,7 +13,6 @@ function setupMenuHoverColors() {
         });
         
         link.addEventListener('mouseout', function() {
-            // No hacemos nada aquí, dejamos que el CSS maneje el color por defecto
             this.style.color = '';
         });
     });
@@ -26,12 +25,6 @@ document.addEventListener('DOMContentLoaded', setupMenuHoverColors);
 document.addEventListener('DOMContentLoaded', function() {
     const themeSwitch = document.getElementById('theme-switch');
     const body = document.body;
-
-    // Verificar el estado del tema al cargar la página
-    if (localStorage.getItem('theme') === 'light') {
-        body.classList.add('light-mode');
-        themeSwitch.checked = true;
-    }
 
     // Cambiar el tema cuando se cambia el interruptor
     themeSwitch.addEventListener('change', function() {

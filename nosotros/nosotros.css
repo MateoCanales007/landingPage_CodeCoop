@@ -1,15 +1,13 @@
-*{
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #1e0642;
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* Barra de navegacion */
+.fondo {
+    background-color: #1e0642;
+}
+
 header {
     padding: 20px 0;
 }
@@ -50,6 +48,8 @@ nav ul li a {
     font-weight: bold;
     transition: color 0.3s; 
 }
+
+
 
 /* Boton */
 
@@ -149,169 +149,167 @@ input:checked + .slider:before {
 }
 
 
-
-/* contenedor principal */
-main{
-    max-width: 900px;
-    margin: 80px auto 20px auto;
-}
-
-.columnas{
-    margin: auto 0 auto 23px;
-}
-
-
-/* Columna de información de formulario */
-#cont-formulario {
-    background: #8418ff5b;
-    padding: 20px; 
-    border-radius: 10px; 
-}
-
-#cont-formulario h1 {
+.p1{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 70px;
     color: #ffffff;
-    font-weight: 800; 
-    font-size: 2em; 
-    margin-bottom: 10px; 
 }
 
-#cont-formulario p {
+.p2{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 70px;
+    text-align: end;
     color: #ffffff;
-    font-size: 1.3em;
-    line-height: 1.5; /* Mejora la legibilidad */
 }
 
-#cont-formulario p a {
-    color: #1cff00;
-    text-decoration: underline; /* Subrayado para destacar enlaces */
+.vision{
+    text-align: right;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    color: #f645ff;
 }
 
-#cont-formulario .dias {
+.mision{
+    text-align: left;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
     color: #4ad2f6;
-    font-weight: 550;
 }
 
-#cont-formulario a img {
-    width: 45px;
-    height: 45px;
-}
-
-#cont-formulario .sigue {
+.p3{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 90px;
     color: #ffffff;
-    font-weight: 700;
 }
 
-.redes {
-    display: flex; /* Utiliza Flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+
+.hh1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: Poppins, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
 }
 
-.redes img {
-    margin: 10px 20px 10px 20px;
-    justify-content: center;
+h1 {
+    font-size: 70px;
+    margin-bottom: 0px;
+    font-family: Poppins, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+
 }
 
-/* Formulario de obtención de datos */
-#formulario {
-    background-color: #ffffff;
-    padding: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 35px rgb(162, 1, 255); /* Sombra para profundidad */
+.caja{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    margin-bottom: 110px;
 }
 
-#formulario .dat-cont {
-    width: calc(100% - 5px);
-    margin: 10px auto; 
-    background-color: rgba(238, 237, 237, 0.76);
-    border: none;
-    border-bottom: 2px solid rgba(97, 86, 86, 0.582);
-    border-radius: 6px;
-    outline: none;
-    padding: 10px;
+/*imagenes*/
+.imgrosa{
+    width: 280px;
+    position: absolute;
+    height: 120px;
+    margin-top: 10px;
 }
 
-#formulario .btn {
-    width: calc(100% - 5px);
-    color: #ffffff;
-    background: linear-gradient(to right, #8418ff, #1cff00);
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 35px;
-    padding: 15px; 
-    border: none; 
-    transition: background-position 2.5s ease;
-    background-size: 500% 500%;
-}
+.imgceleste{
+    width: 290px;
+    height: 290px;
+    padding-top: 120px;
 
-/* Efecto hover en el botón */
-#formulario .btn:hover {
-    background: linear-gradient(to right, #1cff00, #8418ff); /* Invertir colores en hover */
-    background-position: right center;
-    transform: scale(1.05);
-    transition: transform 2.0s; 
-}
-
-#formulario .btn:not(:hover) {
-    background-position: left center;
 }
 
 
 
-/* Pie de Pagina */
+/*
+
+img{
+    width: 270px;
+}
+
+.imgverde{
+    width: 280px;
+    height: 120px;
+}
+    
+.img1{
+    width: 1750px;
+    height: 325px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container0{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}*/
+
+/* footer */
 .footer {
     background-color: #000000;
     color: #ffffff;
     padding: 30px 0;
     padding-bottom: 0;
-    margin-top: 8rem;
+
     border-top-left-radius: 35px; 
     border-top-right-radius: 35px;
     position: relative;
     z-index: 2;
 }
-
 .footer-content {
-    max-width: 1200px;  
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
 .footer-logo img {
     width: 120px;
     height: auto;
 }
-
 .footer-links {
     display: flex;
     gap: 290px;
 }
-
 .footer-column h3 {
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase; 
 }
-
 .footer-column ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .footer-column ul li {
     margin-bottom: 8px;
 }
-
 .footer-column ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s; /* Efecto de transición al pasar el mouse */
 }
-
 .footer-column ul li a:hover {
     color: #8548ff; /* Color al pasar el mouse */
 }
@@ -324,14 +322,12 @@ main{
     border-top: 1px solid #333;
     font-size: 12px;
 }
-
 .footer-bottom p {
     font-family: 'Poppins', sans-serif;
     font-style:oblique;
     font-size: 25px !important;
     margin-bottom: 30px;
 }
-
 .footer-bottom span {
     font-size: 20px;
 }
