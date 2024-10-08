@@ -7,14 +7,17 @@
     <title>CodeCoop - Creamos tu página</title>
     <link rel="stylesheet" href="css/menu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css" />
     <style>
-        
+
     </style>
 </head>
 
 <body class="fondo">
+
+    <!-- menu -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -33,17 +36,32 @@
                 </nav>
             </div>
         </div>
-        <button id="toggle-mode">Modo Claro</button>
     </header>
+
+    <!-- modo claro y oscuro  -->
+    <div id="theme-toggle" class="theme-toggle">
+        <span class="light">☀️</span>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+        <span class="dark">🌙</span>
+    </div>
+
+
+    <!-- main content -->
     <main class="container mt-5">
         <div class="row">
             <div class="col-md-4">
                 <div class="image-container">
-                    <img id="img1" src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843394/qguswlz487tkdixvlqol.png"
+                    <img id="img1"
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843394/qguswlz487tkdixvlqol.png"
                         alt="WWW" class="img-fluid">
-                    <img id="img2" src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843398/e7fdhmohlg8utpfb3gcv.png"
+                    <img id="img2"
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843398/e7fdhmohlg8utpfb3gcv.png"
                         alt="Code" class="img-fluid">
-                    <img id="img3" src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843467/vbalmyupjg2muwmqsdyu.png"
+                    <img id="img3"
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1727843467/vbalmyupjg2muwmqsdyu.png"
                         alt="SEO" class="img-fluid">
                 </div>
             </div>
@@ -52,13 +70,15 @@
                     <h1 class="mb-4">CREAMOS TU PÁGINA WEB</h1>
                     <b>
                         <div class="p">
-                            <span class="purple">Uniendo (</span><span class="cyan"><i>talento</i> <i class="pink">&</i> <span class="purple">Fuerza</span></span><span class="purple">)</span>
+                            <span class="purple">Uniendo (</span><span class="cyan"><i>talento</i> <i class="pink">&</i>
+                                <span class="purple">Fuerza</span></span><span class="purple">)</span>
                             <br>
                             <span class="green">=</span><span class="pink"> 'para crear soluciones'</span></span>
                         </div>
-                    <a href="#" class="cta-button">Únete a nosotros
-                        <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726644202/dgppfgjrhe4j1uqxcy1e.png" alt="right-row">
-                    </a>
+                        <a href="#" class="cta-button">Únete a nosotros
+                            <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726644202/dgppfgjrhe4j1uqxcy1e.png"
+                                alt="right-row">
+                        </a>
                 </div>
             </div>
         </div>
@@ -111,11 +131,6 @@
     </footer>
     <script src="javascript/img.js"></script>
     <script src="javascript/hover.js"></script>
-    <script>
-        document.getElementById('toggle-mode').addEventListener('click', function() {
-            document.body.classList.toggle('light-mode');
-        });
-    </script>
-    
 </body>
+
 </html>
