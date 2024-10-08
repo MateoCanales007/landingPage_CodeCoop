@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCoop | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Contacto/assets/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+</head>
+
+<body>
+
+    <!-- Barra de Navegacion -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1727844898/hbqwz80utegxmrz7wkpi.png"
+                        alt="CodeCoop Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html" class="nav">MENU</a></li>
+                        <li><a href="#" class="nav">NOSOTROS</a></li>
+                        <li><a href="#" class="nav">PLANES</a></li>
+                        <li><a href="#" class="nav">CONTACTO</a></li>
+                        <li><a href="../Blog/HTML/blog.html" class="nav">PORTAFOLIO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formulario e información del mismo -->
+    <main class="p-4 d-flex rounded-4">
+        <div class="m-1 p-3 columnas rounded-5" id="cont-formulario">
+            <h1>¿Quieres un sitio web a la medida de tus necesidades?</h1>
+            <p>Suscríbete a nuestro boletín para recibir las últimas tendencias y consejos sobre desarrollo web y
+                tecnología. ¡No te pierdas las novedades de CodeCoop!</p>
+            <p>Contacta con nosotros <a href="#">info@codecoop.com</a></p>
+            <p>+503 1234-5678</p>
+            <p class="dias"><em>Lunes a Viernes: 9:00 a. m. - 6:00 p. m.<br>Sábado: 9:00 a. m. - 12:00 p. m.</em></p>
+            <h3 class="mb-2 sigue">Síguenos en redes sociales</h3>
+            <div class="redes">
+                <a href="#" class=""><img
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1728350695/l3rmmgiahhd6004iehz4.png"
+                        alt="img-Whatsapp"></a>
+                <a href="#" class=""><img
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1728350390/jxnaol2rdnmu7lzcr3hp.png"
+                        alt="img-Discord"></a>
+                <a href="#" class=""><img
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1728350390/ij1i0z8lv17xlooyluhp.png"
+                        alt="img-Linkedin"></a>
+                <a href="#" class=""><img
+                        src="https://res.cloudinary.com/dj848z4er/image/upload/v1728350325/sa2aofilsyathvkwhco0.png"
+                        alt="img-Instagram"></a>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="columnas p-3 rounded-4" id="formulario">
+            <!-- Alerta que se mostrará al enviar el formulario -->
+            <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert"
+                style="display: none;">
+                <i class="fas fa-check-circle"></i> ¡Operación exitosa! Se ha enviado tus datos correctamente.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <form id="contactForm">
+                <input type="text" class="dat-cont" placeholder="  Ingrese su Nombre" required>
+                <input type="email" class="dat-cont" placeholder="  Dirección de E-mail" required>
+                <input type="number" class="dat-cont" min="18" placeholder="  Introduce tu edad" required />
+                <textarea name="mensaje" class="dat-cont" placeholder="  Ingrese su Mensaje"></textarea><br>
+                <button type="submit" class="btn btn-primary m-auto">ENTREGAR</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://res.cloudinary.com/dj848z4er/image/upload/v1726411181/CodeCoop_1__preview_rev_3_dgiuzm.png"
+                        alt="CodeCoop Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Cooperativa</h3>
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nuestro equipo</a></li>
+                            <li><a href="#">Portafolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><a href="#">Formulario de Contacto</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">T&C</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Social</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Discord</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeCoop. <span>Todos los derechos están reservados.</span></p>
+                <p><a href="#" style="color: #ffffff; text-decoration: none;">Terminos y condiciones</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para el envío del formulario -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            document.getElementById('successAlert').style.display = 'block'; // Mostrar alerta
+            this.reset(); // Reiniciar el formulario
+        });
+    </script>
+
+</body>
+
+</html>

@@ -4,6 +4,11 @@ body, html {
     height: 100%;
 }
 
+.fondo {
+    background-color: #1e0642;
+    color: #ffffff;
+}
+
 header {
     padding: 20px 0;
 }
@@ -46,6 +51,48 @@ nav ul li a {
 }
 
 
+/* Boton */
+
+/* buton modo claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode nav ul li a {
+    color: #000000;
+}
+
+.light-mode .main-content h1 {
+    color: #000000;
+}
+
+.light-mode .cta-button {
+    background: linear-gradient(to right, #4ad2f6, #8418ff);
+}
+
+.light-mode .footer {
+    background-color: hsl(266, 100%, 50%);
+    color: #ffffff;
+}
+
+.light-mode .footer-column ul li a {
+    color: #ffffff;
+}
+
+.light-mode .footer-column ul li a:hover {
+    color: #8548ff;
+}
+
+.light-mode .footer {
+    color: #ffffff;
+}
+
+.light-mode .footer-bottom {
+    border-top: 1px solid #ffffff;
+}
+
+
 /* IMAGENES 3D */
 .image-container {
     position: relative;
@@ -76,6 +123,7 @@ nav ul li a {
 #img3 {
     transform: translate(35%, 135%);
 }
+
 /* ANIMACION */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -114,7 +162,7 @@ main {
 .p {
     font-family: 'AnkaCoder', monospace;
     font-size: 40px;
-    padding: 10px 0;
+    padding: 30px 0;
     display: inline-block;
     padding-bottom: 30px;
 }
