@@ -24,6 +24,20 @@ header {
     width: 210px; 
 }
 header {
+    padding: 20px 0;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 210px; 
+}
+header {
     border-bottom: #8418ff 4px solid;
     padding: 0;
 }
@@ -118,7 +132,11 @@ input:checked + .slider:before {
     color: #000000;
 }
 
-.light-mode .main-content h1 {
+.light-mode .titulo-texto h1 {
+    color: #000000;
+}
+
+.light-mode .content-paginaWeb {
     color: #000000;
 }
 
@@ -136,7 +154,7 @@ input:checked + .slider:before {
 }
 
 .light-mode .footer-column ul li a:hover {
-    color: #8548ff;
+    color: #ffffffa8;
 }
 
 .light-mode .footer {

@@ -119,7 +119,11 @@ input:checked + .slider:before {
     color: #000000;
 }
 
-.light-mode .main-content h1 {
+.light-mode .hh1 {
+    color: #000000;
+}
+
+.light-mode p {
     color: #000000;
 }
 
@@ -137,7 +141,7 @@ input:checked + .slider:before {
 }
 
 .light-mode .footer-column ul li a:hover {
-    color: #8548ff;
+    color: #ffffffc6;
 }
 
 .light-mode .footer {
@@ -146,6 +150,10 @@ input:checked + .slider:before {
 
 .light-mode .footer-bottom {
     border-top: 1px solid #ffffff;
+}
+
+.light-mode .footer-bottom p {
+    color: #ffffff;
 }
 
 
@@ -184,7 +192,7 @@ input:checked + .slider:before {
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     color: #ffffff;
 }
 
@@ -270,7 +278,7 @@ img{
     color: #ffffff;
     padding: 30px 0;
     padding-bottom: 0;
-
+    font-family: 'Poppins', sans-serif;
     border-top-left-radius: 35px; 
     border-top-right-radius: 35px;
     position: relative;

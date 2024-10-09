@@ -111,6 +111,14 @@ input:checked + .slider:before {
     color: #000000;
 }
 
+.light-mode #cont-formulario {
+    background: #8115fc;
+}
+
+.light-mode #cont-formulario em {
+    color: #ffffffca;
+}
+
 .light-mode .nav {
     color: #000000;
 }
@@ -123,9 +131,6 @@ input:checked + .slider:before {
     color: #000000;
 }
 
-.light-mode .cta-button {
-    background: linear-gradient(to right, #4ad2f6, #8418ff);
-}
 
 .light-mode .footer {
     background-color: #6904db;
@@ -136,9 +141,6 @@ input:checked + .slider:before {
     color: #ffffff;
 }
 
-.light-mode .footer-column ul li a:hover {
-    color: #8548ff;
-}
 
 .light-mode .footer {
     color: #ffffff;
@@ -148,6 +150,9 @@ input:checked + .slider:before {
     border-top: 1px solid #ffffff;
 }
 
+.light-mode .footer-column ul li a:hover {
+    color: #ffffffb1;
+}
 
 
 /* contenedor principal */
