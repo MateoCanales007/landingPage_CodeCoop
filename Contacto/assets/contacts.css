@@ -183,12 +183,12 @@ main{
 #cont-formulario p {
     color: #ffffff;
     font-size: 1.3em;
-    line-height: 1.5; /* Mejora la legibilidad */
+    line-height: 1.5; 
 }
 
 #cont-formulario p a {
     color: #1cff00;
-    text-decoration: underline; /* Subrayado para destacar enlaces */
+    text-decoration: underline; 
 }
 
 #cont-formulario .dias {
@@ -207,9 +207,9 @@ main{
 }
 
 .redes {
-    display: flex; /* Utiliza Flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .redes img {
